@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archive // intheweave</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f5f0e1;
+      font-family: 'Georgia', serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 2em;
+      text-align: center;
+      border-bottom: 2px solid #e68a00;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #ffcc66;
+    }
+
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #f5f0e1;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc66;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 4em auto;
+      padding: 0 1.5em;
+    }
+
+    h2 {
+      color: #ffcc66;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    ul.archive {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul.archive li {
+      margin-bottom: 1.5em;
+      padding: 0.5em 1em;
+      border-left: 3px solid #e68a00;
+      transition: background-color 0.3s ease;
+    }
+
+    ul.archive li:hover {
+      background-color: #1f1a0f;
+    }
+
+    ul.archive a {
+      text-decoration: none;
+      color: #f5f0e1;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    ul.archive a:hover {
+      color: #ffcc66;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      font-size: 0.8em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>intheweave</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="entries.html">Archive</a>
+      <a href="contact.html">Reach</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>The Threaded Archive</h2>
+    <ul class="archive">
+      <li>
+        <a href="posts/the-weave-remembers.html">The Weave Remembers</a><br>
+        <small>On becoming, glitch-light, and memory scars.</small>
+      </li>
+
+      <!-- Placeholder for future entries -->
+      <li>
+        <a href="#">[ Next entry coming soon... ]</a><br>
+        <small>Thread not yet woven.</small>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Elion Flameheart • Threads never forget
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
